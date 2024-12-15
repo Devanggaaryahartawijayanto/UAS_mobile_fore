@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <!-- Icon Back & Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/md_grey_50">
+
+        <!-- Icon Back di pojok kiri -->
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back Icon"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Teks Masuk di tengah -->
+        <TextView
+            android:id="@+id/textMasuk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daftar"
+            android:textColor="@color/colorThird"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+
+    <!-- Spacing -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <!-- Input Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textColor="#004d00"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Nama"
+        android:textColorHint="#BDBDBD"
+        android:textColor="@android:color/black"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spacing -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <!-- Input Email -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#004d00"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Email"
+        android:textColorHint="#BDBDBD"
+        android:textColor="@android:color/black"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spacing -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <!-- Input Password -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="#004d00"
+        android:textSize="18sp"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Password"
+        android:textColorHint="#BDBDBD"
+        android:textColor="@android:color/black"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spacing -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <RadioGroup
+        android:id="@+id/kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- RadioButton Admin -->
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:text="Admin"
+            android:textColor="@android:color/black"
+            app:buttonTint="@color/colorPrimary" />
+
+        <!-- RadioButton User -->
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="User"
+            android:textColor="@android:color/black"
+            app:buttonTint="@color/colorPrimary" />
+    </RadioGroup>
+
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjutkan"
+        android:backgroundTint="@color/colorThird"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Footer Text - Informasi Persetujuan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dengan masuk Fore Coffee, kamu telah menyetujui"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Footer Text - Link Syarat & Kebijakan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Syarat dan Ketentuan dan Kebijakan Privasi"
+        android:textColor="#004d00"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
+
+</LinearLayout>

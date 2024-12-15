@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_bottom_navigation"
+    app:startDestination="@id/homeAdminFragment">
+
+    <fragment
+        android:id="@+id/homeAdminFragment"
+        android:name="com.example.uas_mobile.admin.HomeAdminFragment"
+        android:label="fragment_home_admin"
+        tools:layout="@layout/fragment_home_admin" >
+        <action
+            android:id="@+id/action_homeAdminFragment_to_editPhotoFragment"
+            app:destination="@id/editPhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPhotoFragment"
+        android:name="com.example.uas_mobile.admin.AddCoffeFragment"
+        android:label="fragment_add_photo"
+        tools:layout="@layout/fragment_add_coffe" />
+    <fragment
+        android:id="@+id/profileAdminFragment"
+        android:name="com.example.uas_mobile.admin.ProfileAdminFragment"
+        android:label="fragment_profile_admin"
+        tools:layout="@layout/fragment_profile_admin" />
+    <fragment
+        android:id="@+id/editPhotoFragment"
+        android:name="com.example.uas_mobile.admin.EditCoffeFragment"
+        android:label="fragment_edit_photo"
+        tools:layout="@layout/fragment_edit_coffe" />
+</navigation>
